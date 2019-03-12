@@ -242,12 +242,11 @@ header {
       border-top: 5px solid #757575;
       border-bottom: 10px solid #2196F3;
       height: 150px;
-      margin-top: 10px;
   }
 
 .copyright {
     max-width: 275px;
-    margin-left: 20px;
+    margin: 20px;
     float: left;
 }
 .copyright > p {
@@ -256,7 +255,7 @@ header {
 
   #currentYear {
       float: right;
-      margin-right: 20px;
+      margin: 20px;
   }
 
   #currentYear > h4 {

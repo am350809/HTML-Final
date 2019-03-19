@@ -7,6 +7,7 @@
         <link href="css/Grid.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet"> 
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/media.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -16,7 +17,7 @@
             <div class="nav-centered">
                 <ul class="nav-links">
                     <li><a href="index.html">ABOUT</a></li>
-                    <li><a href="#">PURCHASE</a></li>
+                    <li><a href="purchase.html">PURCHASE</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -28,23 +29,88 @@
 
         <main>
             <section class="contact">
-                <h1>CONTACT ME</h1>
-                <hr />
                 <div class="form span-10-of-12 ">
                     <div class="row">
-                        <div class="col span-6-of-12">
-                            <label>First Name: </label><input type="text" placeholder="First Name" required>
-                        </div>
-                        <div class="col span-6-of-12">
-                            <label>Last Name: </label><input type="text" placeholder="Last Name" required>
-                        </div>
+                        <h1>CONTACT ME</h1>
+                        <hr />
                     </div>
                     <div class="row">
-                        <div class="col span-10-of-12">
-                            <label>Email Address: </label><input type="email" placeholder="something@somewhere.com" reqired>
-                        </div>
+                        <form method="POST" action="">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col span-4-of-12">
+                                        <label>First Name</label>
+                                    </div>
+                                    <div class="col span-8-of-12">
+                                        <input type="text" placeholder="Your First Name" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-4-of-12">
+                                        <label>Last Name</label>
+                                    </div>
+                                    <div class="col span-8-of-12">
+                                        <input type="text" placeholder="Your Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-4-of-12">
+                                        <label>Email Address</label>
+                                        </div>
+                                        <div class="col span-8-of-12">
+                                        <input type="email" placeholder="Your Email" required>
+                                    </div>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col span-4-of-12">
+                                        <label for="info">I would like info about...</label>
+                                    </div>
+                                    <div class="col span-8-of-12">
+                                        <select name="moreInfo" id="info">
+                                            <option value="purchase">Purchasing Art</option>
+                                            <option value="commission">Commissioning Art</option>
+                                            <option value="showScedule"> Future Shows Schedule</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col span-4-of-12">
+                                            <label>Comments?</label>
+                                        </div>
+                                        <div class="col span-8-of-12">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col span-4-of-12">
+                                        <label>Would you my newsletter?</label>
+                                    </div>
+                                    <div class="col span-8-of-12">
+                                        <input type="checkbox" name="newsletter" id="newsletter" checked> Yes!
+                                    </div>
+                                    </div>         
+                                <div class="row">
+                                        <div class="col span-4-of-12">
+                                            <label>How was your experience?</label>
+                                        </div>
+                                        <div class="col span-8-of-12">
+                                            <label for="bad">Bad</label>
+                                            <input name="experience" id="bad" value="bad" type="radio">
+                                            <label for="neutral">Neutral</label>
+                                            <input name="experience" id="neutral" value="neutral" type="radio">
+                                            <label for="great">Great!</label>
+                                            <input name="experience" id="great" value="great" type="radio">
+                                        </div>
+                                    </div>                                                  
+                            </fieldset>
+
+                            <div id="buttons">
+                                <input type="submit" value="Submit" />
+                                <input type="reset" value="Reset" />
+                            </div>
+                        </form>
                     </div>
-                </div>
+
         </main>
 
         <footer>
